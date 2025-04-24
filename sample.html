@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sample</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.3/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAflBMVEUSEhL///8AAACbm5vNzc3IyMiWlpYNDQ0KCgr39/cGBgbT09PDw8P6+vq7u7unp6fc3NyysrLm5uZJSUlCQkKgoKBhYWEWFhZSUlJxcXExMTE6Ojrs7OxpaWmMjIwqKiqEhIQcHBwsLCx8fHyPj49kZGRtbW1XV1cjIyM3NzdGOwLVAAAFlUlEQVR4nO2c6ZLiOgyFiVicjZCFnQBha+D9X/DGpGeahtimbpBD1Zzvd9qtE8uyLSl0OgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOBGuH6jv3d98SZLGBBUMhvP3QZjuONsJ4f5QJnSrHmRBLkTU5NhRk4eR8fp7rNUulLdoO85N3qNFE6qQbxgMi1HbeIOb6OUt12E3+qaK+z+DDTsFUuiZsu6MeXSWxaB84u3KZTEg3GbM+mTONzPHoPCkmCzpSZD/m/K6RsnT/IYFJbuGp7tTyTRpUhrjGFRWJIPllYnkiirnT4+hXIip9Y0Ep1DlR18CkuChRWN5dYXa6zgVOg4Kb9GQfO+1gZeheX28cW7Q4pLYrCAW6Hj9FecYbU8Nrau0Ak4HfUVA9gVhqwKT2YD+twKJ5wKxYVb4cD8D06s4ZTy9hW6rBfHF0INt0LWQFNeJ7LWFR6Y93wKTBYwK8w7zNkNWrescMB+NKVeqwrzGXuCikwrkVfhwsLtwmQEq0LW88yPFfpg0yiaG3aj3E4S1b0o8hcVaSOFuru142WWbvk0VqYwpBnL2tuN8OkeRXmCtC9vbS1VQ9lQY8djMHCpKmicDpvuZDQaTbrH4qsqT9DDCcwf6wTaiDI/EjWzGN0ZItVdp0UUPD/vxeHxtOr8ymprA41NgdJRNUfw7beblupWhyjVzbeThpvsbxVGaA72nj0X/bb+oo6oCVWltlOiV/eHPFpUVRgq1M+Mree9XU1gL2dlt4jq1A0ldX/SL2TuXun7YSuJffpS+VQ8jR5sHaZh93C+VuFltpwvjlH8KKf/pdoqhpuWiom0jVTv/Bd59LXyq8gpDRWiiq7L00i7N/wlsO+hf3Bp8cKdfy2edoXvvyY6m99ROYGtCezIcNnV7f7l1nHVlatL7bORPholok19EtomahODzFgVE7TXnNTC8QeU811aqRLhx5f8q/R1hR+EWasO+oNPfu1yur76/ql2pw/2H6JPVhPDWkftXV+zkGb1ThDYqxjqcDXVKK94wUSf1spNI1i3rlEY9sRgbuj8KQ/m2ivhC7GKFRLGOoN0NZVIXzq4aYDk0t40CpqaN/zy+jA601N/060JLhvoy8kVpa+3NI3kq3aJ4WPkycPBafnrjn85b6LH5ddTva/evpVppJUyQBxp99gpJeci7UVJMkqSqB97T8E3HuxpqhrQm9rf+AUdVObI7kR5FD309Qe6OwHB5iLdmNRRa2LbU4Uu7Tel6hHaTbtPd6RHhvHoa/+9St29+rlwZrWHT2je9l2DqQwn2+kgVMWTtD9ZL++DkHbYjsXFKEjXcnKk38+WdFaLbtKP0zz3PC/P07iXTA7Z7CnEqleiI0sW1iQKfd52/OxOD8lSZcpU7HTbT7qz5aj61Huj6pC+YtCzFFFpo7OiYZ+3viMpsVOYMZTXWPtpuEvcEuEa0kes1bXhin8p/ummb0ehhQKiezWlsZnr+Lz9Qh1jKOBXyNxO0xEX41mTu59mzitRUzuxpTBiVmi+snIr9FgVCjIawN+5V3MqfB/GZprGCl/oL92wdtDqD2w32HuEWY9u/0Cf99qcmGBXeGQNNWT+HIFZYZ+7XOrS0lDUZFUYZBY+uXRpXNuEYEFhz1apxqfrSL0euRQOI5vVRJcuB9Xphkeh7Q8Qbym0ef03iAwKh+G6la+BiUQRPK/ItyuMBy19CNy5TeTq+Oit71WYTrKWP8t3icaDgElhPJlT60Xgzq3O6S5+WhDfpDAPi8sH/XSEuDVaJrcyTLM+b5nn8uKoyD7lNyPukE1c2/li0ujjOTqMDmdZrGn5xyKUVGWYJjzXwwEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPB+/gPRPka+1WZXUQAAAABJRU5ErkJggg==" type="image/png">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+ 
+
+</head>
+<body class="overflow-x-hidden">
+    <header class="fixed top-0 left-0 w-full z-30">
+        <nav class="bg-white border border-solid border-gray-300 py-2 mt-4 p-4 mx-4 sm:mx-8 md:mx-16 rounded-full shadow-lg">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <button id="hamburger-menu" class="lg:hidden text-black focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                    <a href="#first-section">
+                        <img src="https://img1.wsimg.com/isteam/ip/067a4d42-19e8-46d9-9bed-578bf62dd44e/blob-6c0c2e0.png/:/rs=w:536,h:167,cg:true,m/cr=w:536,h:167/qt=q:95" 
+                             class="h-10 mx-2 relative mt-1" alt="Go to first section">
+                    </a>
+                </div>
+                <div class="flex items-center mx-2 space-x-4 lg:hidden">
+                    <div class="border-l  border-gray-500 h-8"></div>
+                   
+                </div>
+                <div id="nav-links" class="hidden lg:flex items-center">
+                    <div class="border-l border-gray-200 mx-6 h-4"></div>
+                    <ul class="flex space-x-6">
+                        <li><a href="#" class="text-black hover:bg-gray-200 p-[2px] rounded-2xl font-semibold">HOME</a></li>
+                        <li class="relative group">
+                            <a href="#" class="text-black hover:bg-gray-200 p-[3px] rounded-full font-semibold focus:outline-none">LISTINGS</a>             
+                        </li>      
+                        <li class="relative group">
+                            <a href="#" class="text-black hover:bg-gray-200 p-[3px] rounded-2xl font-semibold focus:outline-none">LET'S MOVE</a>
+                        </li>
+                        <li class="hidden lg:block">
+                            <a href="#" class="text-black  hover:bg-gray-200 p-[3px] rounded-2xl font-semibold peer focus:outline-none">ABOUT US</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex items-center ml-auto">
+                    <button class="bg-blue-700 text-white  font-semibold rounded-full px-6 py-2 border hover:border-black hover:bg-transparent hover:text-black transition">Get started</button>
+                </div>
+            </div>
+            <div id="mobile-menu" class="lg:hidden hidden mt-4 w-full max-w-[85%] mx-auto bg-gray-50 rounded-2xl shadow-lg absolute top-full overflow-y-auto max-h-[80vh]">
+                <div class="flex justify-between items-center p-0 mx-6 mb-4 mt-2"> 
+                  <div>
+                    <h2 class="text-md mb-2 font-semibold">MARCI METZGER<br> THE RIDGE REALTY GROUP</h2>
+                    <p class="text-md underline text-black">Contact us</p>
+                  </div>
+                  <div>
+                    <img src="https://img1.wsimg.com/isteam/ip/067a4d42-19e8-46d9-9bed-578bf62dd44e/mtn%20falls%20pond.jpg/:/rs=w:1279,m" alt="Logo" class="w-[150px] h-[160]" />
+                  </div>
+                </div>
+                <hr>
+                <ul class="space-y-4 p-4 bg-white">
+                  <li><a href="#" class="text-black font-semibold mx-2 block">OVERVIEW</a></li>
+                  <hr>      
+                  <li class="relative mx-2">
+                    <a href="#" class="text-black font-semibold block flex justify-between items-center mb-4" id="toggle-aboutus-submenu">
+                     HOME
+                      <span id="aboutus-submenu-icon" class="text-xl cursor-pointer ">+</span>
+                    </a>
+
+                    
+                  </li>
+                  <hr>
+              
+                  <li class="relative mx-2">
+                    <a href="#" class="text-black font-semibold block flex justify-between items-center mb-4" id="toggle-services-submenu">
+                      LISTINGS
+                      <span id="services-submenu-icon" class="text-xl cursor-pointer">+</span>
+                    </a>
+       
+                  </li>
+                  <hr>
+              
+                  <li class="relative mx-2">
+                    <a href="#" class="text-black font-semibold block flex justify-between items-center  mb-4" id="toggle-submenu">
+                      LETS MOVE
+                      <span id="submenu-icon" class="text-xl cursor-pointer">+</span>
+                    </a>
+                  
+                  </li>
+                  <hr>
+              
+                  <li class="relative mx-2">
+                    <a href="#" class="text-black font-semibold block flex justify-between items-center  mb-4" id="toggle-info-submenu">
+                      ABOUT US
+                      <span id="info-submenu-icon" class="text-xl cursor-pointer">+</span>
+                    </a>
+           
+                  </li>
+                </ul>
+                <div class="mt-4 p-4 mx-2 border-t  border-gray-300 flex justify-between items-center">
+                    <div class="flex space-x-4">
+                      <a href="#" class="text-gray-600 hover:text-black  rounded-full bg-gray-200 hover:bg-gray-300">
+                        <i class="fab fa-facebook-f"></i>
+                      </a>
+                  
+                      <a href="#" class="text-gray-600 hover:text-black rounded-full bg-gray-200 hover:bg-gray-300">
+                        <i class="fab fa-instagram"></i>
+                      </a>
+                  
+                      <a href="#" class="text-gray-600 hover:text-black rounded-full bg-gray-200 hover:bg-gray-300">
+                        <i class="fab fa-linkedin-in"></i>
+                      </a>
+                  
+                      <a href="#" class="text-gray-600 hover:text-black rounded-full bg-gray-200 hover:bg-gray-300">
+                        <i class="fab fa-youtube"></i>
+                      </a>
+                    </div>
+                  
+                    <p class="text-sm text-black">Sample</p>
+                  </div>
+        </nav>
+    </header>
+
+    <section class="fixed top-0 left-0 w-full h-screen overflow-hidden z-10 bg-black">
+        <img src="https://img1.wsimg.com/isteam/ip/067a4d42-19e8-46d9-9bed-578bf62dd44e/mtn%20falls%20pond.jpg/:/rs=w:1279,m" 
+             alt="Background" 
+             class="absolute top-0 left-0 w-full h-full object-cover opacity-60" />
+    
+        <div class="relative z-20 flex flex-col items-center justify-center h-full text-white text-center px-4">
+            <h2 class="text-lg md:text-xl font-semibold mb-2">MARCI METZGER - THE RIDGE REALTY GROUP</h2>
+            <h1 class="text-6xl md:text-8xl font-bold mb-6">Pahrump Realtor</h1>
+            <div class="relative z-10 bg-white/20 backdrop-blur-md shadow-lg rounded-lg p-8 max-w-5xl w-full text-center mx-12">
+                <div class="flex flex-wrap gap-4 justify-center items-center">
+                    <div class="flex items-center bg-white rounded-md px-3 py-2 w-full sm:w-auto">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-500 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M10 2a6 6 0 016 6c0 4.5-6 10-6 10S4 12.5 4 8a6 6 0 016-6zm0 8a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
+                        </svg>
+                        <input list="locations" class="bg-white focus:outline-none text-gray-800 text-sm font-medium pr-8 pl-2 w-full sm:w-auto" placeholder="Enter or select Location" />
+                        <datalist id="locations">
+                            <option value="New York">
+                            <option value="Los Angeles">
+                            <option value="Chicago">
+                        </datalist>
+                    </div>
+                    <div class="flex items-center bg-white rounded-md px-3 py-2 w-full sm:w-auto">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-500 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M10.707 1.293a1 1 0 00-1.414 0L2 8.586V18a2 2 0 002 2h12a2 2 0 002-2V8.586l-7.293-7.293z" />
+                        </svg>
+                        <select class="bg-white focus:outline-none text-gray-800 text-sm font-medium pr-8 pl-2 w-full sm:w-auto">
+                            <option selected disabled>Type</option>
+                            <option>House</option>
+                            <option>Apartment</option>
+                            <option>Condo</option>
+                        </select>
+                    </div>
+                    <div class="flex items-center bg-white rounded-md px-3 py-2 w-full sm:w-auto">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-500 mr-2" viewBox="http://www.w3.org/2000/svg" fill="currentColor">
+                            <path d="M10 18a1 1 0 01-1-1v-1.05a4.002 4.002 0 01-2.83-6.328 1 1 0 111.415 1.415A2 2 0 0010 13a2 2 0 000-4 1 1 0 010-2 2 2 0 00-1.414-3.414A1 1 0 017.83 3.328 4 4 0 0110 4.05V3a1 1 0 112 0v1.05a4.002 4.002 0 012.83 6.328 1 1 0 11-1.415-1.415A2 2 0 0010 7a2 2 0 000 4 1 1 0 010 2 2 2 0 001.414 3.414A1 1 0 0112.17 16.67 4 4 0 0110 16.95V18a1 1 0 01-1 1z" />
+                        </svg>
+                        <select class="bg-white focus:outline-none text-gray-800 text-sm font-medium pr-8 pl-2 w-full sm:w-auto">
+                            <option selected disabled>Price Range</option>
+                            <option>$500 - $1,000</option>
+                            <option>$1,000 - $2,000</option>
+                            <option>$2,000+</option>
+                        </select>
+                    </div>
+
+                    <div class="flex items-center bg-white rounded-md px-3 py-2 w-full sm:w-auto">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-500 mr-2" fill="currentColor" viewBox="http://www.w3.org/2000/svg">
+                            <path d="M2 6a2 2 0 012-2h12a2 2 0 012 2v4h-2V6H4v4H2V6zM2 12h16v6H2v-6zm4 2v2h2v-2H6z" />
+                        </svg>
+                        <select class="bg-white focus:outline-none text-gray-800 text-sm font-medium pr-8 pl-2 w-full sm:w-auto">
+                            <option selected disabled>Bedrooms</option>
+                            <option>1+</option>
+                            <option>2+</option>
+                            <option>3+</option>
+                            <option>4+</option>
+                        </select>
+                    </div>
+
+                    <div class="flex items-center bg-white rounded-md px-3 py-2 w-full sm:w-auto">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-500 mr-2" fill="currentColor" viewBox="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 011 1v3H3V4zm0 5h14v7a1 1 0 01-1 1H4a1 1 0 01-1-1V9zm4 2a1 1 0 012 0v2a1 1 0 11-2 0v-2z" clip-rule="evenodd" />
+                        </svg>
+                        <select class="bg-white focus:outline-none text-gray-800 text-sm font-medium pr-8 pl-2 w-full sm:w-auto">
+                            <option selected disabled>Baths</option>
+                            <option>1+</option>
+                            <option>2+</option>
+                            <option>3+</option>
+                        </select>
+                    </div>
+    
+                    <div class="flex items-center bg-white rounded-md px-3 py-2 w-full sm:w-auto">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-500 mr-2" fill="currentColor" viewBox="http://www.w3.org/2000/svg">
+                            <path d="M3 4a1 1 0 100 2h14a1 1 0 100-2H3zm0 5a1 1 0 100 2h9a1 1 0 100-2H3zm0 5a1 1 0 100 2h6a1 1 0 100-2H3z" />
+                        </svg>
+                        <select class="bg-white focus:outline-none text-gray-800 text-sm font-medium pr-8 pl-2 w-full sm:w-auto">
+                            <option selected disabled>Sort By</option>
+                            <option>Newest</option>
+                            <option>Price: Low to High</option>
+                            <option>Price: High to Low</option>
+                        </select>
+                    </div>
+    
+                </div>
+
+                <div class="w-full sm:w-auto mt-4 flex justify-center">
+                    <button class="bg-blue-700 text-white font-semibold py-2 px-10 rounded-full hover:bg-blue-600 w-full sm:w-auto text-center">
+                        SEARCH
+                    </button>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    
+      
+      <section >
+      <div class="relative z-20 w-full py-20 bg-white text-black flex flex-col items-center justify-center px-0 rounded-tl-[50px] rounded-tr-[50px] mt-[100vh]">
+        <div class="w-full max-w-6xl flex flex-col md:flex-row justify-between items-center gap-4 px-6">
+      
+          <div class="flex flex-col items-center md:items-center md:w-1/2 lg:mt-0 -mt-14">
+            <img src="https://img1.wsimg.com/isteam/ip/067a4d42-19e8-46d9-9bed-578bf62dd44e/photo-5db79f9.jpg/:/cr=t:14.65%25,l:0%25,w:100%25,h:66.64%25/rs=w:365,h:365,cg=true" 
+                 alt="Descriptive Alt Text" 
+                 class="w-full max-w-sm rounded-[50px] shadow-md mb-4 mx-auto">
+            <h2 class="text-2xl font-semibold text-center">MARCI METZGER</h2>
+          </div>
+      
+          <div class="flex flex-col md:w-1/2 text-center md:text-left p-8 xl:mx-24">
+            <p class="text-gray-700 text-2xl">GET INVOLVED</p>
+            <h2 class="text-5xl font-bold py-4 mb-4">Discover how <br>to work with us</h2>
+            <hr class="border-blue-700 w-[60px] border-2 mx-auto md:mx-0">
+            <p class="text-gray-700 text-xl py-4 mb-3">
+                Marci was a REALTOR, then licensed Broker, in Washington State. Now, she is enjoying the sunshine, and helping clients in Southern Nevada. Having helped buyers and sellers in many markets since 1995, she is a wealth of knowledge.
+            </p>
+          
+            <button class="relative mb-4 overflow-hidden bg-white text-black font-semibold py-4 px-4 border-2 border-blue-700 w-[250px] group mx-auto md:mx-0">
+              <span class="absolute inset-0 w-full h-full bg-blue-700 transform translate-x-full group-hover:translate-x-0 transition-all duration-500 ease-in-out"></span>
+              <span class="relative z-10 group-hover:text-white">CALL NOW</span>
+            </button>
+        
+          </div>
+          
+      
+        </div>
+      </section>
+      
+      
+      
+      <section class="bg-white py-14 lg:py-32 relative z-20">
+        <!-- <div class="container mx-auto">
+          <div class="flex flex-col lg:flex-row items-center justify-center mx-6 lg:mx-14 lg:gap-10">
+            <div class="w-full lg:w-1/2   lg:order-1 lg:flex lg:flex-col lg:justify-center ">
+                <p class="text-gray-700 text-xl lg:text-2xl">ABOUT MARCI</p>
+                <h2 class="text-3xl lg:text-5xl font-bold py-4 mb-4">Top Residential Sales Last 5 Years</h2>
+                <hr class="border-blue-700 w-[60px] border-2">
+                <p class="text-gray-700 text-base lg:text-xl py-4 mb-3">We helped nearly 90 clients in 2021, and closed 28.5 million in sales! 
+                    Our team works hard everyday to grow and learn, so that we may continue to excel in our market. Our clients deserve our best, & we want to make sure our best is better every year.</p>
+                    <button class="relative overflow-hidden bg-white text-black font-semibold py-4 px-4 border-2 mb-6 border-blue-700 w-[330px] group">
+                        <span class="absolute inset-0 w-full h-full bg-blue-700 transform translate-x-full group-hover:translate-x-0 transition-all duration-500 ease-in-out"></span>
+                        <span class="relative z-10 group-hover:text-white">SEE MORE</span>
+                      </button>
+            
+                </div>
+            <div class="w-full lg:w-1/2 lg:order-2 mb-8 lg:mb-0 flex items-center justify-center">
+                <div class="relative w-full">
+                    <img src="https://img1.wsimg.com/isteam/stock/3395/:/cr=t:11.02%25,l:0%25,w:100%25,h:77.95%25/rs=w:600,h:300,cg:true" alt="Image description" class="w-full h-auto z-10 relative mx-auto shadow-lg">
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col lg:flex-row items-center justify-center mx-6 lg:mx-14 lg:gap-10 lg:mt-24">
+            <div class="w-full lg:w-1/2 lg:order-2  lg:flex lg:flex-col lg:justify-center">
+                <p class="text-gray-700 text-xl lg:text-2xl">ABOUT MARCI</p>
+                <h2 class="text-3xl lg:text-5xl font-bold py-4 mb-4">Don't Just List it...</h2>
+                <hr class="border-blue-700 w-[60px] border-2">
+                <p class="text-gray-700 text-base lg:text-xl py-4 mb-3">Get it SOLD! We exhaust every avenue to ensure our listings are at the fingertips of every possible buyer, getting you top dollar for your home.</p>
+                <button class="relative overflow-hidden bg-white text-black font-semibold py-4 px-4 border-2 mb-6 border-blue-700 w-[330px] group">
+                    <span class="absolute inset-0 w-full h-full bg-blue-700 transform translate-x-full group-hover:translate-x-0 transition-all duration-500 ease-in-out"></span>
+                    <span class="relative z-10 group-hover:text-white">TRY IT NOW</span>
+                  </button>
+        
+            
+            </div>
+            <div class="w-full lg:w-1/2 lg:order-1 mb-8 lg:mb-0 flex items-center justify-center">
+                <div class="relative w-full">
+                    <img src="https://img1.wsimg.com/isteam/stock/107927/:/rs=w:600,h:300,cg:true,m/cr=w:600,h:300" alt="Image description" class="w-full h-auto z-10 relative mx-auto shadow-lg">
+                </div>
+            </div>
+        </div>
+          <div class="flex flex-col lg:flex-row items-center justify-center mx-6 lg:mx-14 lg:gap-10 lg:mt-24">
+            <div class="w-full lg:w-1/2  lg:order-1 lg:flex lg:flex-col lg:justify-center ">
+                <p class="text-gray-700 text-xl lg:text-2xl">ABOUT MARCI</p>
+                <h2 class="text-3xl lg:text-5xl font-bold py-4 mb-4">Guide to Buyers</h2>
+                <hr class="border-blue-700 w-[60px] border-2">
+                <p class="text-gray-700 text-base lg:text-xl py-4 mb-4">Nobody knows the market like we do. Enjoy having a pro at your service. Market analysis, upgrades lists, contractors on speed dial, & more!</p>
+                <button class="relative overflow-hidden bg-white text-black font-semibold py-4 px-4 border-2 mb-6 border-blue-700 w-[330px] group">
+                    <span class="absolute inset-0 w-full h-full bg-blue-700 transform translate-x-full group-hover:translate-x-0 transition-all duration-500 ease-in-out"></span>
+                    <span class="relative z-10 group-hover:text-white">GET IN TOUCH</span>
+                  </button>
+            </div>
+            <div class="w-full lg:w-1/2 lg:order-2 mb-8 lg:mb-0 flex items-center justify-center">
+                <div class="relative w-full">
+                    <img src="https://img1.wsimg.com/isteam/stock/771/:/cr=t:5.36%25,l:1.76%25,w:96.47%25,h:89.29%25/rs=w:600,h:300,cg:true,m" alt="Image description" class="w-full h-auto z-10 relative mx-auto shadow-lg">
+                </div>
+            </div>
+        </div>
+      </section>
+
+
+ -->
+ <h2 class="text-4xl lg:text-5xl font-bold text-blue-700 text-center mb-24">GET IT SOLD</h2>
+       <div class="flex flex-col lg:flex-row justify-center lg:gap-12 max-w-[89rem] mx-auto">
+            <div class="flex flex-col lg:flex-row justify-center lg:gap-2">
+                <div class="w-full lg:w-full lg:p-8 p-6">
+                    <h2 class="text-3xl sm:text-5xl font-bold mb-6">Top Residential Sales Last 5 Years</h2>
+                    <p class="text-xl text-gray-700 mb-6">We helped nearly 90 clients in 2021, and closed 28.5 million in sales! 
+                        Our team works hard everyday to grow and learn, so that we may continue to excel in our market. Our clients deserve our best, & we want to make sure our best is better every year.</p>
+                    <button class="bg-blue-700 font-semibold text-white px-6 py-2 rounded-full hover:bg-white hover:text-black border hover:border-black transition mb-16">BUY NOW</button>
+                    <img src="https://img1.wsimg.com/isteam/stock/3395/:/cr=t:11.02%25,l:0%25,w:100%25,h:77.95%25/rs=w:600,h:300,cg:true" alt="Image 1" class="w-full h-48 sm:h-64 md:h-80 lg:h-96 object-cover rounded-xl mt-4">
+                </div>
+                <div class="w-full lg:w-auto flex flex-row sm:flex-row lg:gap-5 gap-4 mx-5">
+                    <div class="w-full ">
+                        <img src="https://img.freepik.com/free-photo/vertical-shot-white-building-clear-sky_181624-4575.jpg?ga=GA1.1.1362317033.1743095469&semt=ais_hybrid&w=740" 
+                             alt="Image 2" 
+                             class="w-full h-40 sm:h-48 md:h-64 lg:h-full object-cover rounded-xl">
+                    </div>
+                    <div class="w-full mr-10 ">
+                        <img src="https://img.freepik.com/free-photo/white-concrete-building-with-balconies_250224-234.jpg?ga=GA1.1.1362317033.1743095469&semt=ais_hybrid&w=740" 
+                             alt="Image 3" 
+                             class="w-full h-40 sm:h-48 md:h-64 lg:h-96 object-cover rounded-xl">
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </section>
+    <section class="bg-white py-2 px-0 relative z-20">
+        <div class="relative h-[70vh] flex items-center justify-center bg-cover bg-center bg-[url('https://img1.wsimg.com/isteam/stock/143/:/rs=w:1279,m')]">
+            <div class="absolute inset-0 bg-black bg-opacity-50 z-0"></div>
+            <div class="relative z-10 text-center text-white">
+                <h3 class="text-3xl font-medium mb-2">Connect with us</h3>
+                <h2 class="text-6xl font-semibold mb-6">FIND YOUR DREAM HOME</h2>
+                <div class="flex justify-center">
+       
+                    <button class="group py-2 px-4 bg-blue-700 text-white font-semibold border-2 border-blue-700 hover:bg-transparent hover:border-white hover:text-white transition duration-300 rounded-full flex items-center justify-start mr-4">
+                        <span class="pl-2">Connect</span>
+                        <svg class="w-5 h-5 text-white ml-1 group-hover:text-gray-100" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </button>
+                    <button class="py-2 px-4 bg-white text-black font-semibold border-2 border-white hover:bg-transparent hover:border-white hover:text-white transition duration-300 rounded-full flex items-center justify-start">
+                        <img src="https://img1.wsimg.com/isteam/ip/067a4d42-19e8-46d9-9bed-578bf62dd44e/Marci%201.jpg/:/cr=t:12.9%25,l:27.78%25,w:48.08%25,h:32.04%25/rs=w:365,h:365,cg:true,m" alt="Profile Image" class="w-8 h-8 mr-2 rounded-full">
+                        <span class="pr-2">Book an intro call</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-white p-6 relative z-20">
+        <div class="container mx-auto my-12 px-4 text-center">
+  
+          <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6 justify-items-center">
+            <div>
+              <img src="https://img1.wsimg.com/isteam/ip/067a4d42-19e8-46d9-9bed-578bf62dd44e/BIG%20CIRCLE%202.png/:/rs=w:100,h:100,cg=true,m/cr=w:100,h:100" alt="Partner 1" class="w-full h-auto object-contain" />
+            </div>
+            <div>
+              <img src="https://img1.wsimg.com/isteam/ip/067a4d42-19e8-46d9-9bed-578bf62dd44e/Equal%20Housing%20Logo.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:100,h:100,cg=true" alt="Partner 2" class="w-full h-auto object-contain" />
+            </div>
+            <div>
+              <img src="https://img1.wsimg.com/isteam/ip/067a4d42-19e8-46d9-9bed-578bf62dd44e/Realtor%20Pin.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:112,h:100,cg=true" alt="Partner 3" class="w-full h-auto object-contain" />
+            </div>
+            <div>
+              <img src="https://img1.wsimg.com/isteam/ip/067a4d42-19e8-46d9-9bed-578bf62dd44e/Chamber.jpg/:/rs=w:100,h:100,cg=true,m/cr=w:100,h:100" alt="Partner 4" class="w-full h-auto object-contain" />
+            </div>
+          </div>
+        </div>
+      </section>
+      
+    
+      
+      
+
+    
+    <section class="bg-white py-12 relative -mt-16 z-20">
+            <div class="max-w-[90rem] mx-auto p-6 mt-6">
+                <div class="text-center mb-8">
+                    <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-blue-700">
+                        PHOTO GALLERY
+                      </h1>
+                    <p class="mt-2 text-gray-600 text-xl mb-4">Explore our curated collection of premium designs</p>
+                  </div>
+                <div class="flex flex-col md:flex-row">
+                  <div class="md:w-[100%] p-10 mb-6 md:mb-0 flex flex-col md:flex-row justify-between items-center bg-cover bg-center h-[400px] rounded-2xl shadow-lg bg-[url('https://img1.wsimg.com/isteam/ip/067a4d42-19e8-46d9-9bed-578bf62dd44e/4460%20Roseworthy-52.jpg-SMALL.JPG/:/rs=w:984,h:655')] relative overflow-hidden">
+                    <div class="flex flex-col justify-center items-start text-white p-6 z-10">
+                    </div>
+                  </div>
+                  <div class="md:w-[40%] flex flex-col md:space-y-6 md:pl-6">
+                    <div class="flex flex-row space-x-6 md:flex-col md:space-x-0 md:space-y-6">
+                      <div class="rounded-2xl shadow-lg w-1/2 md:w-full relative group overflow-hidden">
+                        <img src="https://img1.wsimg.com/isteam/ip/067a4d42-19e8-46d9-9bed-578bf62dd44e/5570%20Ailanto-14.jpg-SMALL.JPG/:/cr=t:0%25,l:0.05%25,w:99.9%25,h:99.9%25/rs=w:984,h:655" alt="Card Image 1" class="w-full h-48 rounded-2xl object-cover transition-transform transform group-hover:scale-110 duration-300">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-80 transition-opacity duration-300"></div>
+                        <div class="absolute bottom-0 left-0 w-full h-1/4 bg-gradient-to-t from-black via-transparent to-transparent opacity-50"></div>
+                        <div class="absolute bottom-2 left-2 text-white text-lg font-bold px-2 rounded transition-transform transform group-hover:-translate-y-10 duration-300">
+                          Affordable
+                        </div>
+                        <div class="absolute bottom-2 left-2 text-white text-sm font-bold p-2 rounded opacity-0 group-hover:opacity-100 transition-opacity transform group-hover:translate-y-0 duration-300">
+                            Move-In Ready Homes 
+                        </div>
+                      </div>
+                      <div class="rounded-2xl shadow-lg w-1/2 md:w-full relative group overflow-hidden">
+                        <img src="https://img1.wsimg.com/isteam/ip/067a4d42-19e8-46d9-9bed-578bf62dd44e/5570%20Ailanto-45.jpg-SMALL.JPG/:/rs=w:984,h:655" alt="Card Image 2" class="w-full h-48 rounded-2xl object-cover transition-transform transform group-hover:scale-110 duration-300">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-80 transition-opacity duration-300"></div>
+                        <div class="absolute bottom-0 left-0 w-full h-1/4 bg-gradient-to-t from-black via-transparent to-transparent opacity-50"></div>
+                        <div class="absolute bottom-2 left-2 text-white text-lg font-bold px-2 rounded transition-transform transform group-hover:-translate-y-10 duration-300">
+                           Future Home
+                        </div>
+                        <div class="absolute bottom-2 left-2 text-white text-sm font-bold p-2 rounded opacity-0 group-hover:opacity-100 transition-opacity transform group-hover:translate-y-0 duration-300">
+                            Complete Properties
+                        </div>
+                      </div>
+                    </div>
+                  </div>       
+                </div>
+              </div>
+        <div class="flex justify-center items-center">
+            <div class="flex flex-col md:flex-row justify-center items-center gap-6 w-full max-w-[89rem] px-4 mx-2">
+              <div class="flex flex-row md:flex-row w-full md:w-2/3 gap-6">
+                <div class="w-1/2 md:w-1/2 bg-white rounded-2xl shadow-lg h-70 relative group overflow-hidden">
+                  <img src="https://img1.wsimg.com/isteam/ip/067a4d42-19e8-46d9-9bed-578bf62dd44e/5570%20Ailanto-50.jpg-SMALL.JPG/:/rs=w:984,h:655" alt="Image 1" class="w-full h-64 object-cover transition-transform transform group-hover:scale-110 duration-300">
+                  <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-80 transition-opacity duration-300"></div>
+                  <div class="absolute bottom-2 left-2 text-white text-lg font-bold px-2 rounded transition-transform transform group-hover:-translate-y-10 duration-300">
+                    Your Home, Your Lot
+                  </div>
+                  <div class="absolute bottom-2 left-2 text-white text-sm font-bold p-2 rounded opacity-0 group-hover:opacity-100 transition-opacity transform group-hover:translate-y-0 duration-300">
+                    Own It All Today
+                  </div>
+                </div>
+                <div class="w-1/2 md:w-1/2 bg-white rounded-2xl shadow-lg h-70 relative group overflow-hidden">
+                  <img src="https://img1.wsimg.com/isteam/ip/067a4d42-19e8-46d9-9bed-578bf62dd44e/4787%20E%20Beacon%20Ridge-54.jpg-SMALL.JPG/:/rs=w:984,h:655" alt="Image 2" class="w-full h-64 object-cover transition-transform transform group-hover:scale-110 duration-300">
+                  <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-80 transition-opacity duration-300"></div>
+                  <div class="absolute bottom-2 left-2 text-white text-lg font-bold px-2 rounded transition-transform transform group-hover:-translate-y-10 duration-300">
+                  Solid Investment
+                  </div>
+                  <div class="absolute bottom-2 left-2 text-white text-sm font-bold p-2 rounded opacity-0 group-hover:opacity-100 transition-opacity transform group-hover:translate-y-0 duration-300">
+                    Safe locations
+                  </div>
+                </div>
+              </div>
+              <div class="w-full md:w-1/3 bg-white rounded-2xl shadow-lg h-70 relative group overflow-hidden">
+                <img src="https://img1.wsimg.com/isteam/ip/067a4d42-19e8-46d9-9bed-578bf62dd44e/4787%20E%20Beacon%20Ridge-53.jpg-SMALL.JPG/:/rs=w:984,h:656" alt="Image 3" class="w-full h-64 object-cover transition-transform transform group-hover:scale-110 duration-300">
+                <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-80 transition-opacity duration-300"></div>
+                <div class="absolute bottom-2 left-2 text-white text-lg font-bold px-2 rounded transition-transform transform group-hover:-translate-y-10 duration-300">
+                    Live Where You Belong
+                </div>
+                <div class="absolute bottom-2 left-2 text-white text-sm font-bold p-2 rounded opacity-0 group-hover:opacity-100 transition-opacity transform group-hover:translate-y-0 duration-300">
+                    Affordable House and Lot Packages
+                </div>
+              </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12 lg:-mt-auto bg-white relative z-20 text-gray-700">
+        <h2 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-center font-semibold text-blue-700 mb-8">
+            Our Services
+          </h2>
+          
+        <div class="flex flex-wrap justify-center gap-6">
+          
+          <div class="flex flex-col items-center p-6 rounded-lg w-80 mb-6 md:mb-0">
+            <img src="https://img1.wsimg.com/isteam/stock/12792/:/rs=w:365,h:365,cg:true,m/cr=w:365,h:365" 
+                 alt="Service 1" 
+                 class="rounded-full mb-4 border-[10px] w-60 h-60 object-cover">
+            <h3 class="text-3xl font-semibold text-center mb-4">Real Estate Done Right</h3>
+            <p class="text-xl font-semibold text-center">
+              Nervous about your property adventure? Don’t be. Whether you're getting ready to buy or sell your residence, looking at investment properties, or just curious about the markets, our team ensures you get the best experience possible!
+            </p>
+          </div>
+      
+          <div class="flex flex-col items-center p-6 rounded-lg w-80 mb-6 md:mb-0">
+            <img src="https://img1.wsimg.com/isteam/stock/43920/:/rs=w:365,h:365,cg:true,m/cr=w:365,h:365" 
+                 alt="Service 2" 
+                 class="rounded-full mb-4 border-[10px] w-60 h-60 object-cover">
+            <h3 class="text-3xl font-semibold text-center mb-4">Commercial & Residential</h3>
+            <p class="text-xl font-semibold text-center">
+              Large or small, condo or mansion, we can find it and get at the price that's right. Fixer-uppers? Luxury? We can help with all of it! We live, work, and play in this community. Happy to help you find where to put your hard-earned dollars.
+            </p>
+          </div>
+      
+          <div class="flex flex-col items-center p-6 rounded-lg w-80 mb-6 md:mb-0">
+            <img src="https://img1.wsimg.com/isteam/stock/kayaJdA/:/rs=w:365,h:365,cg:true,m/cr=w:365,h:365" 
+                 alt="Service 3" 
+                 class="rounded-full mb-4 border-[10px] w-60 h-60 object-cover">
+            <h3 class="text-3xl font-semibold text-center mb-4">Rely on Expertise</h3>
+            <p class="text-xl font-semibold text-center">
+              If you have questions about affordability, credit, and loan options, trust us to connect you with the right people to get the answers you need in a timely fashion. We make sure you feel confident and educated every step of the way.
+            </p>
+          </div>
+      
+        </div>
+      </section>
+      <section class="relative z-20 bg-cover bg-center bg-no-repeat py-24 bg-[url('https://img.freepik.com/free-photo/amazing-aerial-shot-singapore-cityscape-with-lots-skyscrapers_181624-18618.jpg?ga=GA1.1.1362317033.1743095469&semt=ais_hybrid&w=740')]">
+        <div class="absolute inset-0 bg-black opacity-80 z-20"></div>
+      
+        <div class="relative z-20 flex justify-center items-center px-4 sm:px-6 lg:px-8">
+          <div class="max-w-6xl w-full flex flex-col lg:flex-row justify-between items-start gap-8 text-white">
+            <div class="w-full lg:w-1/2 p-4 sm:p-6">
+              <h2 class="text-2xl sm:text-3xl font-semibold mb-4">Marci Metzger 
+                <br> THE RIDGE REALTY GROUP</h2>
+      
+              <p class="text-base sm:text-lg mb-2 flex items-start gap-2">
+                <svg class="w-5 h-5 text-blue-400 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M10 0a7 7 0 00-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 00-7-7zm0 9.5A2.5 2.5 0 1110 4a2.5 2.5 0 010 5.5z"/>
+                </svg>
+                3190 HW-160, Suite F, Pahrump, Nevada 89048, United States
+              </p>
+      
+              <p class="text-base sm:text-lg mb-2 flex items-start gap-2">
+                <svg class="w-5 h-5 text-blue-500 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M2.003 5.884l2-3A2 2 0 016.06 2H7a1 1 0 011 1v4a1 1 0 01-.553.894l-1.447.724a11.042 11.042 0 005.382 5.382l.724-1.447A1 1 0 0112 11h4a1 1 0 011 1v.94a2 2 0 01-.884 1.557l-3 2a2 2 0 01-2.12.057c-3.94-2.257-7.093-5.41-9.35-9.35a2 2 0 01.057-2.12z"/>
+                </svg>
+                (206) 919-6886
+              </p>
+      
+              <p class="text-base sm:text-lg mb-2 flex items-start gap-2 font-medium">
+                <svg class="w-5 h-5 text-yellow-500 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M10 2a8 8 0 100 16 8 8 0 000-16zm1 8H9V5h2v5z"/>
+                </svg>
+                Office Hours
+              </p>
+      
+              <div class="ml-6">
+                <p class="text-base sm:text-lg mb-2">Open today 08:00 a.m. – 07:00 p.m.</p>
+                <p class="text-base sm:text-lg mb-2">Open daily 8:00 am - 7:00 pm</p>
+                <p class="text-base sm:text-lg">Appointments outside office hours available upon request. Just call!</p>
+      
+                <a href="https://wa.me/12069196886" target="_blank" rel="noopener noreferrer">
+                  <button class="mt-4 inline-flex items-center gap-2 py-2 px-6 bg-green-500 text-white font-semibold rounded-full hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-400">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M20.52 3.48A11.85 11.85 0 0012 0C5.37 0 0 5.38 0 12a11.92 11.92 0 001.63 6l-1.1 4a1 1 0 001.24 1.23l3.99-1.1A11.94 11.94 0 0012 24c6.63 0 12-5.37 12-12 0-3.19-1.25-6.19-3.48-8.52zM12 22a9.93 9.93 0 01-5.17-1.43.99.99 0 00-.76-.11l-2.92.81.81-2.92a.97.97 0 00-.11-.76A9.94 9.94 0 012 12c0-5.52 4.48-10 10-10s10 4.48 10 10-4.48 10-10 10zm5.2-7.9c-.28-.14-1.64-.8-1.9-.9-.26-.1-.45-.14-.63.14-.18.28-.72.9-.88 1.08-.16.18-.32.2-.6.07a8.14 8.14 0 01-2.4-1.48 9 9 0 01-1.66-2.07c-.17-.3 0-.46.13-.6.13-.14.28-.32.42-.48.14-.16.18-.28.28-.46.1-.18.05-.34-.02-.48-.07-.14-.63-1.52-.86-2.07-.22-.54-.44-.47-.63-.47h-.54c-.18 0-.47.07-.72.34s-.95.93-.95 2.27.98 2.63 1.12 2.81c.14.18 1.92 2.94 4.67 4.12.65.28 1.15.45 1.54.58.65.2 1.25.17 1.72.1.52-.08 1.64-.67 1.87-1.32.23-.65.23-1.21.16-1.32-.07-.1-.26-.16-.54-.3z"/>
+                    </svg>
+                    WhatsApp
+                  </button>
+                </a>
+              </div>
+            </div>
+      
+            <div class="w-full lg:w-1/2 bg-white text-black shadow-xl rounded-2xl p-6 sm:p-8">
+              <h2 class="text-2xl sm:text-3xl font-bold text-gray-800 mb-6 flex items-center gap-2">
+                <svg class="w-6 h-6 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M2.003 5.884l2-3A2 2 0 016.06 2H7a1 1 0 011 1v4a1 1 0 01-.553.894l-1.447.724a11.042 11.042 0 005.382 5.382l.724-1.447A1 1 0 0112 11h4a1 1 0 011 1v.94a2 2 0 01-.884 1.557l-3 2a2 2 0 01-2.12.057c-3.94-2.257-7.093-5.41-9.35-9.35a2 2 0 01.057-2.12z"/>
+                </svg>
+                Call or Visit
+              </h2>
+              <form>
+                <div class="mb-5">
+                  <label for="name" class="block text-sm font-semibold text-gray-700 mb-2">Name</label>
+                  <input id="name" type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Your Name" />
+                </div>
+                <div class="mb-5">
+                  <label for="email" class="block text-sm font-semibold text-gray-700 mb-2">Email</label>
+                  <input id="email" type="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="you@example.com" />
+                </div>
+                <div class="mb-5">
+                  <label for="message" class="block text-sm font-semibold text-gray-700 mb-2">Message</label>
+                  <textarea id="message" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="How can we help you?"></textarea>
+                </div>
+                <button type="submit" class="w-full py-3 px-6 bg-blue-700 text-white text-sm font-semibold uppercase rounded-full shadow-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200">
+                  Send Message
+                </button>
+              </form>
+            </div>   
+          </div>
+        </div>
+      
+
+      </section>
+      <section class="relative z-20 w-full">
+        <div class="w-full px-0">
+          <div class="w-full rounded-lg shadow-lg overflow-hidden relative z-30">
+            <iframe 
+              class="w-full h-96" 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3193.410123687306!2d-115.98639231531816!3d36.20839812047352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c8db2f3f3a0b1b%3A0x8c7be7ca0d91fe59!2s3190%20HW-160%2C%20Suite%20F%2C%20Pahrump%2C%20Nevada%2089048%2C%20United%20States!5e0!3m2!1sen!2sus!4v1674100537270!5m2!1sen!2sus" 
+              style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+      </section>
+      
+      <footer>
+        <div class="bg-[#0a0f0a] text-white py-12 px-6 relative z-20">
+        <div class="max-w-4xl mx-auto text-center">
+          <div class="flex justify-center gap-6 mb-6">
+            <a href="#" target="_blank" aria-label="Facebook" class="hover:text-blue-500 transition">
+              <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                <path d="M22 12a10 10 0 10-11.63 9.87v-6.99h-2.3v-2.88h2.3v-2.2c0-2.27 1.35-3.53 3.42-3.53.99 0 2.03.18 2.03.18v2.22h-1.14c-1.13 0-1.48.7-1.48 1.42v1.7h2.51l-.4 2.88h-2.1v6.99A10 10 0 0022 12z"/>
+              </svg>
+            </a>
+            <a href="#" target="_blank" aria-label="Instagram" class="hover:text-pink-500 transition">
+              <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                <path d="M7.75 2h8.5A5.75 5.75 0 0122 7.75v8.5A5.75 5.75 0 0116.25 22h-8.5A5.75 5.75 0 012 16.25v-8.5A5.75 5.75 0 017.75 2zm0 1.5A4.25 4.25 0 003.5 7.75v8.5A4.25 4.25 0 007.75 20.5h8.5a4.25 4.25 0 004.25-4.25v-8.5A4.25 4.25 0 0016.25 3.5h-8.5zM12 7a5 5 0 110 10 5 5 0 010-10zm0 1.5a3.5 3.5 0 100 7 3.5 3.5 0 000-7zm4.5-.75a1.25 1.25 0 112.5 0 1.25 1.25 0 01-2.5 0z"/>
+              </svg>
+            </a>
+            <a href="#" target="_blank" aria-label="LinkedIn" class="hover:text-blue-400 transition">
+              <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                <path d="M4.98 3.5a2.5 2.5 0 11.04 5.001A2.5 2.5 0 014.98 3.5zM3 9h4v12H3zM9 9h3.6v1.56h.05c.5-.94 1.72-1.93 3.55-1.93 3.8 0 4.5 2.5 4.5 5.75V21h-4v-5.25c0-1.25 0-2.88-1.75-2.88s-2 1.37-2 2.78V21H9z"/>
+              </svg>
+            </a>
+          </div>
+          <p class="text-sm text-gray-400">&copy; 2025 The Ridge Realty Group. All rights reserved.</p>
+        </div>
+        </div>
+        
+    </footer>
+      
+
+
+      <script>
+     
+                const hamburgerMenu = document.getElementById('hamburger-menu');
+                const mobileMenu = document.getElementById('mobile-menu');
+            
+                hamburgerMenu.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                });       
+    </script>
+      
+      
+      
+</body>
+</html>
